@@ -1,0 +1,11 @@
+@import "../../var";
+.hero {
+  @include flexCenter;
+  width: 80%;
+  &__swiper {
+  }
+  &__form {
+    width: 100%;
+    background: cornflowerblue;
+  }
+}

@@ -1,0 +1,41 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./var";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  @media only screen and (max-width: $bp-xxl) {
+    font-size: 59%;
+  }
+  @media only screen and (max-width: $bp-xl) {
+    font-size: 56%;
+  }
+  @media only screen and (max-width: $bp-lg) {
+    font-size: 53%;
+  }
+  @media only screen and (max-width: $bp-md) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $bp-sm) {
+    font-size: 50%;
+  }
+}
+
+body {
+  // font-family: 'Bebas Neue', cursive;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.App {
+  font-size: 2rem;
+}
+
+.wrap {
+  @include flexCenter;
+  background: chartreuse;
+}

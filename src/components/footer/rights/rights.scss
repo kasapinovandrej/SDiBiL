@@ -1,0 +1,12 @@
+@import "../../../var";
+.rights__text {
+  text-align: center;
+  background: chartreuse;
+  color: $color1;
+  font-size: 1.5rem;
+  @media only screen and (max-width: $bp-md) {
+    background: $color2;
+  }
+
+  //767px
+}

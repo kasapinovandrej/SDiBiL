@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-share@3x</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 0 0.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mob-home" transform="translate(-143.000000, -1283.000000)">
+            <g id="Group-2" transform="translate(0.000000, 1010.000000)">
+                <g id="icon-share" transform="translate(143.000000, 273.000000)">
+                    <circle id="Oval" fill="#6B7077" cx="16.5" cy="16.5" r="16.5"></circle>
+                    <g filter="url(#filter-1)" id="Group-20">
+                        <g transform="translate(6.947368, 7.526316)">
+                            <rect id="Rectangle-2" fill="#FFFFFF" x="8.10526316" y="0" width="2.89473684" height="18.5263158"></rect>
+                            <polygon id="Rectangle-2" fill="#FFFFFF" transform="translate(9.552632, 9.263158) rotate(-90.000000) translate(-9.552632, -9.263158) " points="8.10526316 -1.22336923e-13 11 -1.22336923e-13 11 18.5263158 8.10526316 18.5263158"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

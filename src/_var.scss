@@ -1,0 +1,20 @@
+$color1: #ffffff;
+$color2: #000000;
+$color3: #d8d8d8;
+$color4: #e8e8e8;
+$color5: #231f20;
+$color6: #b1df7f;
+
+$bp-sm: 540px;
+$bp-md: 720px;
+$bp-lg: 960px;
+$bp-xl: 1140px;
+$bp-xxl: 1320px;
+
+//@media only screen and (max-width: $bp-md) {}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
