@@ -9,7 +9,7 @@ const SubPageHero = () => {
     <div className="subpage-hero">
       <Logo />
       <Title title="OM OSS" type="subpage" />
-      <Subtitle />
+      <Subtitle title="SNABB & SMIDIG BETALNING MED BANKÖVERFÖRING" />
     </div>
   );
 };

@@ -1,8 +1,8 @@
 import React from "react";
 import "./subtitle.scss";
 
-const Subtitle = () => (
-  <h2 className="subtitle">SNABB & SMIDIG BETALNING MED BANKÖVERFÖRING</h2>
+const Subtitle = ({ title, type }) => (
+  <h2 className={`subtitle ${type}`}>{title}</h2>
 );
 
 export default Subtitle;

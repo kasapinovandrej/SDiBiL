@@ -9,7 +9,7 @@ const FrontPageOverlay = () => {
     <div className="overlay">
       <Logo />
       <Title title="VI KÖPER DIN BIL" type="frontpage" />
-      <Subtitle />
+      <Subtitle title="SNABB & SMIDIG BETALNING MED BANKÖVERFÖRING" />
       <p className="paragraph">
         Det blev allmänt känt på 1960-talet i samband med lanseringen av
         Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som
