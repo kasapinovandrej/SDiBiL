@@ -1,0 +1,38 @@
+@import "../../var";
+.form {
+  // width: 80%;
+  height: 100vh;
+  padding: 5rem;
+  // background: coral;
+  & .title {
+    font-family: "Bebas Neue", cursive;
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+  & .paragraph {
+  }
+  & .box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+    // background: cornflowerblue;
+  }
+  & .label {
+    margin-top: 5%;
+  }
+  & .input {
+    background: $color4;
+    border: none;
+
+    height: 5vh;
+  }
+  & .button {
+    color: $color1;
+    background: $color2;
+    font-family: "Bebas Neue", cursive;
+    border: none;
+  }
+  & .sign {
+    height: 2rem;
+  }
+}

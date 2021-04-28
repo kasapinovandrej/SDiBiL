@@ -1,11 +1,13 @@
 @import "../../var";
 .hero {
+  width: 70%;
   @include flexCenter;
-  width: 80%;
+  align-items: stretch;
   &__swiper {
+    width: 50%;
+    position: relative;
   }
   &__form {
-    width: 100%;
-    background: cornflowerblue;
+    width: 40%;
   }
 }

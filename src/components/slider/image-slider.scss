@@ -1,6 +1,7 @@
 @import "../../var";
 
 .carousel {
+  overflow: hidden !important;
 }
 .carousel .slide {
 }
@@ -16,5 +17,8 @@
   height: 0.5rem;
 }
 .slider-image {
+  height: 100%;
+}
+.slider-box {
   height: 100vh;
 }

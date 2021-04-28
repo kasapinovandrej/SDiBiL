@@ -6,28 +6,16 @@ import "./image-slider.scss";
 
 const ImageSlider = () => {
   return (
-    <Carousel
-      controls={false}
-      interval={11000}
-      pause={false}
-      touch={true}
-      // indicators={false}
-    >
+    <Carousel controls={false} interval={11000} pause={false} touch={true}>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={ImageOne}
-          alt="First slide"
-          className="slider-image"
-        />
+        <div className="slider-box">
+          <img src={ImageOne} alt="First slide" className="slider-image" />
+        </div>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={ImageTwo}
-          alt="Second slide"
-          className="slider-image"
-        />
+        <div className="slider-box">
+          <img src={ImageTwo} alt="Second slide" className="slider-image" />
+        </div>
       </Carousel.Item>
     </Carousel>
   );
