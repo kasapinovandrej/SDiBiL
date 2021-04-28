@@ -2,4 +2,7 @@
   z-index: 10;
   top: 3%;
   left: 0;
+  &:hover {
+    cursor: pointer;
+  }
 }

@@ -1,13 +1,15 @@
 import Logo from "../logo/Logo";
 import React from "react";
 import "./front-page-overlay.scss";
+import Subtitle from "../subtitle/Subtitle";
+import Title from "../title/Title";
 
 const FrontPageOverlay = () => {
   return (
     <div className="overlay">
       <Logo />
-      <h1 className="title">VI KÖPER DIN BIL</h1>
-      <h2 className="text">SNABB & SMIDIG BETALNING MED BANKÖVERFÖRING</h2>
+      <Title title="VI KÖPER DIN BIL" type="frontpage" />
+      <Subtitle />
       <p className="paragraph">
         Det blev allmänt känt på 1960-talet i samband med lanseringen av
         Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som

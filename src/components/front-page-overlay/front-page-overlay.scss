@@ -7,23 +7,6 @@
   z-index: 9;
   color: $color1;
   padding: 5%;
-  & .title {
-    margin-top: 20%;
-    font-family: "Bebas Neue", cursive;
-    font-size: 8rem;
-    line-height: 6rem;
-    @media only screen and (max-width: $bp-sm) {
-      font-size: 5rem;
-      margin-top: 38%;
-    }
-  }
-  & .text {
-    font-family: "Bebas Neue", cursive;
-    font-size: 3rem;
-    @media only screen and (max-width: $bp-md) {
-      font-size: 2rem;
-    }
-  }
   & .paragraph {
     position: absolute;
     bottom: 5%;
