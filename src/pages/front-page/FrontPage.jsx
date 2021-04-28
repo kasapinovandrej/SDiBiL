@@ -6,7 +6,7 @@ import FrontPageOverlay from "../../components/front-page-overlay/FrontPageOverl
 
 const FrontPage = () => {
   return (
-    <div className="container">
+    <div className="container-xl cont">
       <div className="hero">
         <div className="hero__swiper">
           <FrontPageOverlay />

@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Route exact path="/" component={FrontPage} />
       <Route path="/om-oss" component={SubPage} />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

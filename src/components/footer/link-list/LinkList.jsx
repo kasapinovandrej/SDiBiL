@@ -1,17 +1,32 @@
 import React from "react";
 import "./link-list.scss";
+import { Link } from "react-router-dom";
 
 const LinkList = () => {
   return (
-    <div className="col-md-8 offset-md-2 list align-items-center jusctift-content-center">
-      <ul className="row list">
-        <li className="link col-md-3 ">Sdi Bil Stockholm</li>
-        <li className="link col-md-2">Hemsida</li>
-        <li className="link col-md-2">Om oss</li>
-        <li className="link col-md-2">info@sdibil.se</li>
-        <li className="link col-md-3">073-70 58 642</li>
-      </ul>
-    </div>
+    <ul className="list-box">
+      <li className="list">Sdi Bil Stockholm</li>
+      <li className="list">
+        <Link className="link" to="/">
+          Hemsida
+        </Link>
+      </li>
+      <li className="list">
+        <Link className="link" to="/om-oss">
+          Om oss
+        </Link>
+      </li>
+      <li className="list">
+        <a className="link" href="mailto: info@sdibil.se">
+          info@sdibil.se
+        </a>
+      </li>
+      <li className="list">
+        <a className="link" href="tel:0737058642">
+          073-70 58 642
+        </a>
+      </li>
+    </ul>
   );
 };
 

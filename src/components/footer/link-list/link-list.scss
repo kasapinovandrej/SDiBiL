@@ -1,11 +1,34 @@
-.list {
-  background: burlywood;
-  // width: 100%;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // text-align: center;
-}
-.link {
-  list-style: none;
+@import "../../../var";
+
+.list-box {
+  // background: burlywood;
+  @include flexCenter;
+  @media only screen and (max-width: $bp-md) {
+    flex-direction: column;
+    margin: 3rem 0;
+    width: 100%;
+  }
+  & .list {
+    list-style: none;
+    &:not(:last-child) {
+      &:after {
+        content: "|";
+        color: $color4;
+        margin: 0 2rem;
+        @media only screen and (max-width: $bp-md) {
+          display: none;
+          margin: 0;
+        }
+      }
+    }
+  }
+  & .link {
+    text-decoration: none;
+    font-size: 2.1rem;
+    color: $color3;
+    transition: all 0.3s;
+    &:hover {
+      color: $color1;
+    }
+  }
 }

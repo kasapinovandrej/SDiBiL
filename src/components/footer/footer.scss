@@ -1,8 +1,20 @@
 @import "../../var";
-@import "../../var";
 
 .footer {
+  position: relative;
   background: $color5;
   color: $color1;
-  font-size: 1.5rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & .link-box {
+    @include flexCenter;
+    @media only screen and (max-width: $bp-lg) {
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: $bp-md) {
+    height: 100%;
+  }
 }
