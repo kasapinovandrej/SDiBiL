@@ -1,38 +1,53 @@
 @import "../../var";
 .form {
-  // width: 80%;
-  height: 100vh;
-  padding: 5rem;
-  // background: coral;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80%;
+  @media only screen and (max-width: $bp-md) {
+    width: 100%;
+    height: 100%;
+    margin-top: 3rem;
+  }
   & .title {
     font-family: "Bebas Neue", cursive;
-    font-size: 3.5rem;
-    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    @media only screen and (max-width: $bp-md) {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 2rem;
+      text-transform: lowercase;
+      &::first-letter {
+        text-transform: capitalize;
+      }
+    }
   }
   & .paragraph {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    @media only screen and (max-width: $bp-md) {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 2rem;
+    }
   }
   & .box {
     display: flex;
     flex-direction: column;
-    margin-top: 20%;
-    // background: cornflowerblue;
   }
   & .label {
-    margin-top: 5%;
   }
   & .input {
+    margin-bottom: 1rem;
     background: $color4;
     border: none;
-
-    height: 5vh;
   }
   & .button {
-    color: $color1;
+    margin-top: 3rem;
     background: $color2;
-    font-family: "Bebas Neue", cursive;
-    border: none;
+    color: $color1;
   }
   & .sign {
-    height: 2rem;
+    height: 3rem;
   }
 }

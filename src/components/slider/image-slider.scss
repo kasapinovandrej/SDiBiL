@@ -1,24 +1,28 @@
 @import "../../var";
 
 .carousel {
-  overflow: hidden !important;
 }
 .carousel .slide {
 }
 .carousel-indicators {
-  right: auto;
-  margin-left: 5%;
+  margin-left: 5% !important;
+  right: auto !important;
 }
 .carousel-indicators .active {
   background-color: $color6;
 }
 .carousel-indicators li {
-  width: 2.5rem;
-  height: 0.5rem;
 }
 .slider-image {
+  width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .slider-box {
+  width: 100%;
   height: 100vh;
+  @media only screen and (max-width: $bp-sm) {
+    width: auto;
+    height: 40rem;
+  }
 }
