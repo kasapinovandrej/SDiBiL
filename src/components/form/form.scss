@@ -10,19 +10,6 @@
     height: 100%;
     margin-top: 3rem;
   }
-  & .title {
-    font-family: "Bebas Neue", cursive;
-    font-size: 3rem;
-    margin-bottom: 3rem;
-    @media only screen and (max-width: $bp-md) {
-      font-family: "Source Sans Pro", sans-serif;
-      font-size: 2rem;
-      text-transform: lowercase;
-      &::first-letter {
-        text-transform: capitalize;
-      }
-    }
-  }
   & .paragraph {
     font-size: 2rem;
     margin-bottom: 3rem;
@@ -40,7 +27,7 @@
   & .input {
     margin-bottom: 1rem;
     background: $color4;
-    border: none;
+    border: 2px solid transparent;
   }
   & .button {
     margin-top: 3rem;
@@ -49,5 +36,10 @@
   }
   & .sign {
     height: 3rem;
+  }
+  & .error {
+    background: rgb(255, 233, 233);
+    border: 2px solid red;
+    border-radius: 5px;
   }
 }
