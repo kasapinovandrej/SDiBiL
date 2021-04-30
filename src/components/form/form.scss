@@ -19,8 +19,17 @@
     }
   }
   & .box {
+    position: relative;
     display: flex;
     flex-direction: column;
+    margin-bottom: 3rem;
+    .button-message {
+      position: absolute;
+      color: red;
+      text-align: center;
+      width: 100%;
+      bottom: -6rem;
+    }
   }
   & .label {
   }
@@ -33,6 +42,10 @@
     margin-top: 3rem;
     background: $color2;
     color: $color1;
+    border: 2px solid transparent;
+    &:active {
+      transform: translateY(1px);
+    }
   }
   & .sign {
     height: 3rem;

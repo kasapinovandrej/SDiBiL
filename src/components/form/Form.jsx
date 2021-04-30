@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./form.scss";
 import Sign from "../../assets/images/icon-arrow2@2x.png";
 import Subtitle from "../subtitle/Subtitle";
@@ -74,9 +74,15 @@ const Form = () => {
     formIsValid = true;
   }
 
+  const [buttonIsClicked, setButtonIsClicked] = useState(false);
+
   const submitHandler = (e) => {
     e.preventDefault();
     if (!formIsValid) {
+      setButtonIsClicked(true);
+      setTimeout(() => {
+        setButtonIsClicked(false);
+      }, 2000);
       return;
     }
     const formSummery = {
@@ -189,6 +195,11 @@ const Form = () => {
         <button className="button" type="submit">
           SKICKA <img src={Sign} alt="btn" className="sign" />
         </button>
+        {buttonIsClicked ? (
+          <span className="button-message">
+            Fyll i fälten markerade med en asterisk *
+          </span>
+        ) : null}
       </form>
     </div>
   );

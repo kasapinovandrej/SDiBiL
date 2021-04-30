@@ -1,7 +1,6 @@
 @import "../../../var";
 
 .list-box {
-  // background: burlywood;
   @include flexCenter;
   @media only screen and (max-width: $bp-md) {
     flex-direction: column;
